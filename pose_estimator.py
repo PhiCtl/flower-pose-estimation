@@ -49,8 +49,8 @@ if cuda_available:
     root_dir = "../../cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/natural"
     csv_file = "../../cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/flowers_dataset.csv"
 else:
-    root_dir = "../3D/outputs/pose_testing/natural"
-    csv_file = "../3D/outputs/pose_testing/flowers_dataset.csv"
+    root_dir = "../synthetic-flower-dataset/outputs/natural"
+    csv_file = "../synthetic-flower-dataset/outputs/flowers_dataset.csv"
 
 transform = MyTransformation(rotation=False)
 flower_dataset = FlowerPoseDataset(csv_file=csv_file,

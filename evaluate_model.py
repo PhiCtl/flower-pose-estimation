@@ -194,8 +194,10 @@ if cuda_available:
     root_dir = "../../cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/natural"
     csv_file = "../../cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/flowers_dataset.csv"
 else:
-    root_dir = path_to_mount+"/cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/natural"
-    csv_file = path_to_mount+"/cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/flowers_dataset.csv"
+    #root_dir = path_to_mount+"/cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/natural"
+    #csv_file = path_to_mount+"/cvlabsrc1/cvlab/datasets_hugonot/project_emna_gil_flowers/flowers_dataset.csv"
+    root_dir = path_to_mount + "../synthetic-flower-dataset/outputs/natural"
+    csv_file = "../synthetic-flower-dataset/outputs/flowers_dataset.csv"
 
 
 transform = MyTransformation(image_transforms=[transforms.ToTensor()], rotation=False)
